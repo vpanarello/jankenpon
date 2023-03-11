@@ -9,10 +9,10 @@ public interface GameElement {
 	
 	
 	/**
-	 * Check if this element will win the passed element or get a draw.
+	 * Execute a match between elements. The result can be win, lose or draw.
 	 * 
 	 * @param GameElement
-	 * @return Boolean: true: winner, false: loser, null pointer: draw
+	 * @return MatchResult
 	 */
 	MatchResult match(GameElement element);
 
