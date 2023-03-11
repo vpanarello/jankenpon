@@ -2,13 +2,13 @@ package com.tyntec.jankenpon;
 
 public class Scissors implements GameElement {
 
-	public Boolean win(GameElement element) {
+	public MatchResult match(GameElement element) {
 		if (element instanceof Scissors) {
-			return null;
+			return MatchResult.DRAW;
 		} else if (element instanceof Paper) {
-			return true;
+			return MatchResult.WIN;
 		} else {
-			return false;
+			return MatchResult.LOSE;
 		}
 	}
 

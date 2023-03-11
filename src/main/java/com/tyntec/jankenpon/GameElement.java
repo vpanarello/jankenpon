@@ -14,6 +14,6 @@ public interface GameElement {
 	 * @param GameElement
 	 * @return Boolean: true: winner, false: loser, null pointer: draw
 	 */
-	Boolean win(GameElement element);
+	MatchResult match(GameElement element);
 
 }
