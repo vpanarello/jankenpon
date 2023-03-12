@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.tyntec.jankenpon.GameElement;
-import com.tyntec.jankenpon.GameElementBuilder;
-import com.tyntec.jankenpon.MatchResult;
+import com.tyntec.jankenpon.elements.GameElement;
+import com.tyntec.jankenpon.elements.GameElementBuilder;
+import com.tyntec.jankenpon.elements.MatchResult;
 
 class GameLogicTest {
 

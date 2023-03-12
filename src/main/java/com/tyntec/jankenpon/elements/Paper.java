@@ -1,11 +1,11 @@
-package com.tyntec.jankenpon;
+package com.tyntec.jankenpon.elements;
 
-public class Rock implements GameElement {
+public class Paper implements GameElement {
 
 	public MatchResult match(GameElement element) {
-		if (element instanceof Rock) {
+		if (element instanceof Paper) {
 			return MatchResult.DRAW;
-		} else if (element instanceof Scissors) {
+		} else if (element instanceof Rock) {
 			return MatchResult.WIN;
 		} else {
 			return MatchResult.LOSE;

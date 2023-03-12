@@ -1,4 +1,4 @@
-package com.tyntec.jankenpon;
+package com.tyntec.jankenpon.elements;
 
 public enum MatchResult {
 	WIN,

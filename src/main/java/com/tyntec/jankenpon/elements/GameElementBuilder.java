@@ -1,4 +1,4 @@
-package com.tyntec.jankenpon;
+package com.tyntec.jankenpon.elements;
 
 import java.util.Random;
 

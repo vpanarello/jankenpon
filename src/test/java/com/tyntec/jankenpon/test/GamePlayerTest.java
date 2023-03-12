@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-import com.tyntec.jankenpon.GamePlayer;
+import com.tyntec.jankenpon.players.GamePlayer;
 
 @TestInstance(value = Lifecycle.PER_CLASS)
 public class GamePlayerTest {
@@ -21,7 +21,7 @@ public class GamePlayerTest {
 
 	@BeforeAll
 	void initiatePlayer() {
-		player = new GamePlayer();
+		player = new GamePlayer("Test Player");
 
 		for (int i = 0; i < WINS; i++) {
 			player.win();
@@ -44,6 +44,11 @@ public class GamePlayerTest {
 		assertEquals(player.getDraws(), DRAWS);
 		assertEquals(player.getLoses(), LOSES);
 
+	}
+	
+	@Test
+	void checkPlayerName() {
+		assertEquals(player.getName(), "Test Player");
 	}
 
 	@AfterAll

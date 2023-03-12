@@ -10,11 +10,11 @@ import java.util.Map.Entry;
 
 import org.junit.jupiter.api.Test;
 
-import com.tyntec.jankenpon.GameElement;
-import com.tyntec.jankenpon.GameElementBuilder;
-import com.tyntec.jankenpon.Paper;
-import com.tyntec.jankenpon.Rock;
-import com.tyntec.jankenpon.Scissors;
+import com.tyntec.jankenpon.elements.GameElement;
+import com.tyntec.jankenpon.elements.GameElementBuilder;
+import com.tyntec.jankenpon.elements.Paper;
+import com.tyntec.jankenpon.elements.Rock;
+import com.tyntec.jankenpon.elements.Scissors;
 
 public class GameElementBuilderTest {
 
