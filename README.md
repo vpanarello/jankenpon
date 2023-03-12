@@ -4,7 +4,9 @@ Jankenpon (also known as Rock-Paper-Scissors) is a classic game played between t
 
 This implementation of Jankenpon is built in plain Java and uses Maven for dependency management. It includes unit tests to ensure that the code functions correctly and is robust.
 
-To play the game, the user is prompted to enter their choice of hand shape (rock, paper, or scissors) and the computer generates a random choice as the opponent. The outcome of the game is displayed, and the user can choose to play again or exit the game.
+On this implementation the Player 1 the Paper is previous choose and the Player 2 has a random choice of Rock-Paper-Scissors. 100 rounds will be played and at the end a result summary will be printed.
+
+An example of a next implementation step is a new, more interactive, GameManager class should be created. The user is prompted to enter their choice of hand shape (rock, paper, or scissors) and the computer generates a random choice as the opponent. The outcome of the game is displayed, and the user can choose to play again or exit the game. 
 
 Jankenpon is a simple and fun game that can be played almost anywhere with just two people and no equipment needed. This implementation adds an extra layer of complexity by using Java, Maven, and unit testing to ensure the code is reliable and functional.
 
