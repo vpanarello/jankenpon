@@ -1,4 +1,4 @@
-package com.tyntec.jankenpon.test;
+package com.tyntec.jankenpon;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
