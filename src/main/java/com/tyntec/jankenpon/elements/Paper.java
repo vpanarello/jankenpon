@@ -16,5 +16,4 @@ public class Paper implements GameElement {
 	public String toString() {
 		return this.getClass().getSimpleName();
 	}
-
 }

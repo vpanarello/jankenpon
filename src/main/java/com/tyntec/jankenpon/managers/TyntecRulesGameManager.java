@@ -6,7 +6,7 @@ import com.tyntec.jankenpon.players.GamePlayer;
 public class TyntecRulesGameManager implements GameManager {
 
 	/*
-
+	 * 
 	 * Rock-Paper-Scissors
 	 * 
 	 * Build a game in which two players compete in a game of Rock-Paper-Scissors
@@ -29,7 +29,6 @@ public class TyntecRulesGameManager implements GameManager {
 	private GamePlayer playerB;
 
 	public TyntecRulesGameManager(GamePlayer playerA, GamePlayer playerB) {
-		super();
 		this.playerA = playerA;
 		this.playerB = playerB;
 	}
@@ -37,24 +36,18 @@ public class TyntecRulesGameManager implements GameManager {
 	public void playARound() {
 
 		playerA.setChoose(GameElementBuilder.getInstance().paper().build());
-
 		playerB.setChoose(GameElementBuilder.getInstance().random().build());
-
 		playerA.match(playerB);
 
 	}
 
 	@Override
-	public GameSummary run() throws InterruptedException {
+	public GameSummary run() {
 
 		for (int round = 1; round <= ROUNDS; round++) {
 			playARound();
-			Thread.sleep(10);
-			System.out.printf(".");
 		}
 
 		return new TyntecRulesGameSummary(playerA, playerB);
-
 	}
-
 }

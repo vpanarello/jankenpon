@@ -6,7 +6,7 @@ import com.tyntec.jankenpon.elements.MatchResult;
 public class GamePlayer {
 
 	private GameElement choose;
-	
+
 	private String name;
 
 	private int loses;
@@ -16,15 +16,14 @@ public class GamePlayer {
 	private int draws;
 
 	public GamePlayer(String name) {
-		super();
 		this.name = name;
 		clearStats();
 	}
-	
+
 	public MatchResult match(GamePlayer otherPlayer) {
-		
+
 		MatchResult result = this.getChoose().match(otherPlayer.getChoose());
-		
+
 		switch (result) {
 		case WIN:
 			this.win();
@@ -39,18 +38,16 @@ public class GamePlayer {
 			otherPlayer.draw();
 			break;
 		}
-		
-		
+
 		return result;
 	}
-	
 
 	public void clearStats() {
 		loses = 0;
 		wins = 0;
 		draws = 0;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -90,5 +87,4 @@ public class GamePlayer {
 	public void draw() {
 		draws++;
 	}
-
 }

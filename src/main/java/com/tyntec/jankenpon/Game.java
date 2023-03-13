@@ -9,16 +9,14 @@ public class Game {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		System.out.printf("Playing...");
-	
 		GameManager manager = new TyntecRulesGameManager(
 				new GamePlayer("Player A"),
 				new GamePlayer("Player B")
 				);
 
 		GameSummary summary = manager.run();
-		
-		System.out.printf("%n%n");
+
+		System.out.printf("%n");
 		System.out.println(summary);
 
 	}

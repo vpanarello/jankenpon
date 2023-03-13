@@ -45,7 +45,7 @@ public class GamePlayerTest {
 		assertEquals(player.getLoses(), LOSES);
 
 	}
-	
+
 	@Test
 	void checkPlayerName() {
 		assertEquals(player.getName(), "Test Player");

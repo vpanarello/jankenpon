@@ -35,10 +35,10 @@ public class GameElementBuilder {
 	}
 
 	public GameElement build() {
-		if(gameElement == null) {
+		if (gameElement == null) {
 			throw new RuntimeException("No game element type selected");
 		}
-		
+
 		return gameElement;
 	}
 
